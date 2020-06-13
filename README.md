@@ -3,7 +3,7 @@ beeper - play sound via PC speaker
 
 ### Installation
 
-    go get github.com/biter777/countries
+    go get github.com/biter777/beeper
 
 ### Usage
 ```go
