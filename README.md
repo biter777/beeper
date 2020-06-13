@@ -20,5 +20,6 @@ func main() {
 
 ### Contributing
 
- Welcome pull requests, bug fixes and issue reports.
- Before proposing a change, please discuss it first by raising an issue.
+ Welcome pull requests, bug fixes and issue reports.<br/>
+ Before proposing a change, please discuss it first by raising an issue.<br/>
+ <b>Star us</b>. Give us a star, please, if it's not against your religion :)
