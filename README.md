@@ -23,7 +23,7 @@ beeper - play sound via PC speaker.<br/><br/>
 func main() {
 	b, _ := beeper.NewBeeper()
 	b.Beep(5000, 100*time.Millisecond) // beep sound via PC speaker, 5000 hz, 100 ms
-	b.BeepItems(beeper.StarWars)       // play StarWars melody via PC speaker :)
+	b.BeepItems(beeper.StarWars())       // play StarWars melody via PC speaker :)
 	b.Close()
 }
 ```
