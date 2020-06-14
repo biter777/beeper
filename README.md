@@ -1,5 +1,5 @@
 # beeper
-beeper - play sound via PC speaker.<br/><br/>
+beeper - play sound via PC speaker<br/><br/>
 [![GoDoc](https://godoc.org/github.com/biter777/beeper?status.svg)](https://godoc.org/github.com/biter777/beeper)
 [![GoDev](https://img.shields.io/badge/godev-reference-5b77b3)](https://pkg.go.dev/github.com/biter777/beeper?tab=doc)
 [![Go Walker](https://img.shields.io/badge/gowalker-reference-5b77b3)](https://gowalker.org/github.com/biter777/beeper)
