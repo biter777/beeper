@@ -1,4 +1,11 @@
+// Package beeper - play sound via PC speaker
 package beeper
+
+// Usage:
+//  b, _ := beeper.NewBeeper()
+// 	b.Beep(5000, 100*time.Millisecond) // beep sound via PC speaker, 5000 hz, 100 ms
+// 	b.BeepItems(beeper.StarWars())       // play StarWars melody via PC speaker :)
+// 	b.Close()
 
 import (
 	"os"
@@ -9,7 +16,7 @@ import (
 type Beeper interface {
 	Beep(freq int, duration time.Duration) error
 	BeepItem(item *BeepItem) error
-	BeepItems(items []BeepItem) error
+	BeepItems(items []BeepItem, speed int) error
 	Close() error
 }
 

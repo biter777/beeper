@@ -115,13 +115,17 @@ func (b *linuxBeeper) BeepItem(item *BeepItem) error {
 }
 
 // BeepItems - BeepItems
-func (b *linuxBeeper) BeepItems(items []BeepItem) (err error) {
+// @speed = melody play speed; if speed<1 = normal speed; speed==2 = 2xfaster than normal
+func (b *linuxBeeper) BeepItems(items []BeepItem, speed int) (err error) {
+	if speed < 1 {
+		speed = 1
+	}
 	for _, item := range items {
-		err = b.Beep(item.Freq, item.Duration)
+		err = b.Beep(item.Freq, item.Duration/time.Duration(speed))
 		if err != nil {
 			return err
 		}
-		time.Sleep(item.Pause)
+		time.Sleep(item.Pause / time.Duration(speed))
 	}
 	return nil
 }
