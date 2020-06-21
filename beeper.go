@@ -16,7 +16,7 @@ import (
 type Beeper interface {
 	Beep(freq int, duration time.Duration) error
 	BeepItem(item *BeepItem) error
-	BeepItems(items []BeepItem, speed int) error
+	BeepItems(items []BeepItem, speed float64) error
 	Close() error
 }
 
